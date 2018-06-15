@@ -1,0 +1,61 @@
+/* @import url('halloween.css'); */
+
+
+/* nav a.hover {color: white; background-color: red} */
+
+
+
+h1{ font-family: courier;font-size: 2em}
+
+body { 
+    color: red; 
+    font-size: 100%;
+    background-color: #97b4ce
+}
+
+h2 {color: rgba(17, 10, 126, 1); font-style: italic; font-size: 1.5em;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d0e4f7+0,73b1e7+35,0a77d5+55,539fe1+79,87bcea+100 */
+background: #d0e4f7; /* Old browsers */
+background: -moz-linear-gradient(top, #d0e4f7 0%, #73b1e7 35%, #0a77d5 55%, #539fe1 79%, #87bcea 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #d0e4f7 0%,#73b1e7 35%,#0a77d5 55%,#539fe1 79%,#87bcea 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #d0e4f7 0%,#73b1e7 35%,#0a77d5 55%,#539fe1 79%,#87bcea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+}
+
+header h2 {color: black;
+text-align: center}
+
+
+
+main article #ltrblk {color: black}
+
+p {color: blue; font-size: 18px}
+
+p.two {font: bold 15px Arial, sans-serif  }
+
+/* nav {text-transform: uppercase} */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav li {
+    text-decoration: none; 
+    list-style: none;
+    background: url(images/favicon-32x32.png) no-repeat left top ;
+    height: 54px;
+    padding-left: 44px;
+    padding-top: 3px;
+}
+
+nav a:link {color: white; background-color: rgb(224, 135, 135)}
+/* a:visited {color: white; background-color: red} */
+nav a:hover {color: rgb(224, 135, 135); background-color: white}
+/* a:active {color: white; background-color: red} */
+
+li{font-variant: small-caps}
+
+footer {font-weight: bold}

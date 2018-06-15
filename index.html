@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basics of HTML, CSS and Javascript</title>
+    <script>
+        function init() {
+            me = {
+                name: 'Judy',
+                email: 'judy@karmoxie.com',
+                hobbies: ['Soccer', 'Hiking']
+            }
+            document.getElementById("name").innerHTML = me.name;
+            document.getElementById("email").innerHTML = me.email;
+
+            let hob = '<ul>'
+            for (var i in me.hobbies) {
+                hob = hob + '<li>' + me.hobbies[i] + '</li>';
+            }
+            hob = hob + '</ul>'
+            document.getElementById("hob").innerHTML = hob;
+
+        }
+    </script>
+    <style>
+        div.centered-content {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid rgb(63, 9, 190);
+            background-color: rgb(128, 128, 128);
+            color: rgb(158, 199, 12)
+        }
+
+        .centered-wrapper {
+            position: relative;
+            text-align: center;
+        }
+
+        .centered-wrapper:before {
+            content: "";
+            position: relative;
+            display: inline-block;
+            width: 0;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .centered-content {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body onload="init()" class="centered-wrapper">
+    <div class="centered-content">
+        <div id="name"></div>
+        <div id="email"></div>
+        <div id="hob"></div>
+    </div>
+</body>
+
+</html>
